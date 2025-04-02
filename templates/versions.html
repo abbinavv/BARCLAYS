@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap AI - Document Versions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>RECAP AI</h1>
+        <div class="cassette"></div>
+        <p class="subheader">Document Versions</p>
+    </div>
+    <div class="versions-container">
+        <h2>Previous Versions</h2>
+        <ul>
+            {% for version in versions %}
+                <li>
+                    {{ version.filename }} (Version {{ version.version }}) - {{ version.timestamp }}
+                    <a href="/download-version/{{ version._id }}">Download</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/analyze">Back to Analysis</a>
+    </div>
+</body>
+</html>

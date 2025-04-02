@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5e6f5; /* Light pink background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header {
+    text-align: center;
+    margin: 40px 0;
+}
+.header h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.cassette {
+    width: 300px;
+    height: 120px;
+    background: url('../img/cassette.png') no-repeat center;
+    background-size: contain;
+    margin: 20px auto;
+}
+.subheader {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+.cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+.card {
+    width: 250px;
+    height: 180px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    padding: 0;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card:active {
+    transform: scale(0.95);
+}
+.card.paste { background-color: #ffe6e6; }
+.card.analyze { background-color: #e6e6ff; }
+.card.upload { background-color: #f5e6ff; }
+.card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* Styles for analyze.html */
+.analyze-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.input-section, .results-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.input-section h2, .results-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.input-group textarea, .input-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.input-group textarea {
+    resize: vertical;
+}
+#analyze-btn {
+    background-color: #e6e6ff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#analyze-btn:hover {
+    background-color: #d5d5ff;
+}
+#analyze-btn:active {
+    transform: scale(0.95);
+}
+.results-section p {
+    font-size: 16px;
+    color: #666;
+    white-space: pre-wrap; /* Preserve line breaks in the summary */
+}
+#download-links {
+    margin-top: 20px;
+}
+#download-links a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #ffe6e6;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+#download-links a:hover {
+    background-color: #ffd5d5;
+}

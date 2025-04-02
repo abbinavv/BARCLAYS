@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap AI - Analyze</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>RECAP AI</h1>
+        <div class="cassette"></div>
+        <p class="subheader">Analyze Your Requirements</p>
+    </div>
+    <div class="analyze-container">
+        <div class="input-section">
+            <h2>Input Your Requirements</h2>
+            <div class="input-group">
+                <label for="text-input">Paste or Type Text:</label>
+                <textarea id="text-input" rows="5" placeholder="Enter your requirements here..."></textarea>
+            </div>
+            <div class="input-group">
+                <label for="file-input">Upload Document:</label>
+                <input type="file" id="file-input" accept=".pdf,.doc,.docx,.txt">
+            </div>
+            <button id="analyze-btn">Analyze with AI</button>
+        </div>
+        <div class="results-section" id="results">
+            <h2>Results</h2>
+            <p id="result-summary">No analysis yet. Click "Analyze with AI" to get started.</p>
+            <div id="download-links" style="display: none;">
+                <a id="download-word" href="#" download>Download Word Document</a>
+                <a id="download-excel" href="#" download>Download Excel File</a>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/analyze.js') }}"></script>
+</body>
+</html>

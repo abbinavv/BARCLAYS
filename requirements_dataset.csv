@@ -1,0 +1,11 @@
+text,label
+"The system shall support 500 users simultaneously.","functional"
+"The system must process transactions in under 2 seconds.","functional"
+"The application shall allow users to log in with email and password.","functional"
+"The system should be secure and protect user data.","non_functional"
+"The platform must be available 99.9% of the time.","non_functional"
+"The interface should be user-friendly and intuitive.","non_functional"
+"Passionate and driven Computer Science student.","other"
+"Seeking an opportunity to contribute to innovative projects.","other"
+"Skills: React, Node.js, MongoDB, Problem-Solving.","other"
+"Organized hackathons and workshops for 100+ participants.","other"

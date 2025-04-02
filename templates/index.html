@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}"> <!-- Optional favicon -->
+</head>
+<body>
+    <div class="header">
+        <h1>RECAP AI</h1>
+        <div class="cassette"></div>
+        <p class="subheader">How will you get started?</p>
+    </div>
+    <div class="cards">
+        <button class="card paste">
+            <h3>Paste in text</h3>
+            <p>Copy-paste directly or from documents</p>
+        </button>
+        <button class="card analyze">
+            <h3>Analyze AI</h3>
+            <p>Analyze with AI</p>
+        </button>
+        <button class="card upload">
+            <h3>Upload Document</h3>
+            <p>Upload supporting documents</p>
+        </button>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
